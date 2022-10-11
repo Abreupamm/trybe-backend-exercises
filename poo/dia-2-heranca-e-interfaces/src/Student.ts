@@ -14,4 +14,10 @@ class Student {
     const result = this._notaProva.map((e: number, index: number) => nota + e);
     return nota;
   }
+
+  media() {
+    const soma = this.soma();
+    const notaFinal = soma / this._notaProva.length;
+    return notaFinal;
+  }
 }
