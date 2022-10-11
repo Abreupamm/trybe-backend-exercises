@@ -10,8 +10,9 @@ class Student {
   }
 
   soma() {
+    const totalNotas = [...this._notaProva, ...this._notaTrabalho]
     let nota = 0;
-    const result = this._notaProva.map((e: number, index: number) => nota + e);
+    const result = totalNotas.map((e: number, index: number) => nota + e);
     return nota;
   }
 
